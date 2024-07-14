@@ -7,7 +7,7 @@ interface IAccount {
   * private inputs:
   * - password
   */
-	function signup(string memory email, string memory password) external returns (string memory token);
+	function signup(string memory email) external returns (string memory token);
 	
   /**
 	* validates email and password in TEE and creates a new token 
@@ -23,7 +23,7 @@ interface IAccount {
   * private inputs:
   * - token
   */
-	function sendOperation(address target, bytes memory data, uint value) external returns (bytes memory result);
+	function sendOperation(address target, bytes memory data, uint value, string memory chainId) external returns (bytes memory result);
 	
   /**
 	* sends the email for recovering account
