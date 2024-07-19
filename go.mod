@@ -4,7 +4,10 @@ go 1.22.1
 
 replace github.com/ethereum/go-ethereum => github.com/flashbots/suave-geth v0.2.0
 
-require github.com/ethereum/go-ethereum v1.14.7
+require (
+	github.com/ethereum/go-ethereum v1.14.7
+	github.com/sethvargo/go-envconfig v1.1.0
+)
 
 require (
 	github.com/DataDog/zstd v1.5.2 // indirect
