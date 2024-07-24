@@ -28,11 +28,21 @@ $ forge fmt
 ### Deploy
 
 ```shell
-$ go run script/deploy.go
+$ go run ./script deploy
 ```
 
 ### Verify
 
 ```shell
-forge v --verifier blockscout --verifier-url https://explorer.toliman.suave.flashbots.net/api <address> src/Account.sol:Account
+forge v --verifier blockscout  --chain 33626250 --verifier-url https://explorer.toliman.suave.flashbots.net/api <address> src/Account.sol:Account
+```
+
+## [WIP] Use Cases
+
+
+### Sign up
+
+
+```shell
+$ go run ./script signup
 ```
