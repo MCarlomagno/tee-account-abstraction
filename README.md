@@ -28,5 +28,11 @@ $ forge fmt
 ### Deploy
 
 ```shell
-$ forge create --rpc-url https://rpc.rigil.suave.flashbots.net --private-key <private-key> src/Account.sol:Account --legacy
+$ go run script/deploy.go
+```
+
+### Verify
+
+```shell
+forge v --verifier blockscout --verifier-url https://explorer.toliman.suave.flashbots.net/api <address> src/Account.sol:Account
 ```

@@ -77,7 +77,7 @@ func main() {
 
 	key, err := crypto.HexToECDSA(string(config.PrivateKey)) // must be funded rigil private key
 
-	kettleRPCURL := "https://rpc.rigil.suave.flashbots.net"
+	kettleRPCURL := "https://rpc.toliman.suave.flashbots.net"
 	contractPath := "Account.sol/Account.json"
 
 	if err != nil {
@@ -119,6 +119,4 @@ func main() {
 	}
 
 	fmt.Printf("deployed contract at %s", receipt.ContractAddress.Hex())
-
-	// TODO: implement
 }
